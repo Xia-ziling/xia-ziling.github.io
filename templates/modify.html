@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>修改信息</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    h1 {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <h1>修改您的信息</h1>
+
+  <form method="POST" action="/update">
+    <label for="name">请输入要更改的用户名:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="password">请输入要更改的用户密码:</label>
+    <input type="password" id="pw" name="pw" minlength="6" required><br>
+
+    <label for="newname">请输入新用户名:</label>
+    <input type="text" id="newname" name="name"><br>
+
+    <label for="telephone">请输入新的手机号:</label>
+    <input type="number" id="telephone" name="telephone"><br>
+
+    <label for="password">请输入新的密码:</label>
+    <input type="password" id="password" name="password" minlength="6"><br>
+
+    <label for="confirm_password">请确认新的密码:</label>
+    <input type="password" id="confirm_password" name="confirm_password" minlength="6"><br>
+
+    <input type="submit" value="更改用户名" name="submit">
+    <input type="submit" value="更改手机号" name="submit">
+    <input type="submit" value="更改密码" name="submit">
+  </form>
+</body>
+</html>

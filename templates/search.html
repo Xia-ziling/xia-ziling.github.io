@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>查看个人信息</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>查看个人信息</h1>
+    <form method="POST" action="{{ url_for('seek') }}">
+      <label for="username">请输入用户名:</label>
+      <input type="text" name="username" id="username">
+      <input type="submit" value="查看信息">
+    </form>
+    {% if info %}
+      <table>
+        <thead>
+          <tr><th>用户名</th><th>密码</th><th>手机号</th></tr>
+        </thead>
+        <tbody>
+          {% for row in info %}
+            <tr><td>{{ row[0] }}</td><td>{{ row[1] }}</td><td>{{ row[2] }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  </body>
+</html>

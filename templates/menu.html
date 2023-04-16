@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>选项菜单</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    h1 {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <h1>选项菜单</h1>
+  <ul>
+      <li><a href="{{ url_for('search') }}">查看个人信息</a></li>
+      <li><a href="{{ url_for('modify') }}">修改个人信息</a></li>
+  </ul>
+</body>
+</html>

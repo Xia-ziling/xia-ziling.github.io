@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>注册登录选项菜单</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    h1 {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <h1>选项菜单</h1>
+  
+  <p>欢迎访问我们的网站，请选择以下选项之一:</p>
+
+  <ul>
+    <li><!-- 在 main.html 文件中添加链接以访问注册页面 -->
+<a href="{{ url_for('register', next_url=request.path) }}">注册</a></li>
+    <li><a href="{{ url_for('login') }}">登录</a></li>
+  </ul>
+    <style>
+    h1 {
+      text-align: center;
+    }
+    </style>
+</body>
+</html>
